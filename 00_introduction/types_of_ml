@@ -1,0 +1,102 @@
+Types of Machine Learning
+
+Machine Learning can be classified based on the type of data available and how learning happens. The four main types are:
+
+1.Supervised Learning
+2.Unsupervised Learning
+3.Semi-Supervised Learning
+4.Reinforcement Learning
+
+Supervised Learning
+Definition - Supervised Learning is a type of machine learning where the model is trained on a labeled dataset, each input data point is associated with a known output (target).
+The goal is to learn a mapping between input and output so the model can predict correct outputs for unseen data.
+
+Key Characteristics
+
+Data is labeled
+Requires input–output pairs
+Used for prediction and classification tasks
+
+Real-world Examples
+
+Predicting house prices (price is known)
+Email spam detection (spam / not spam)
+Predicting student grades
+Disease prediction
+
+Algorithms Used
+
+Linear Regression
+Logistic Regression
+K-Nearest Neighbors (KNN)
+Decision Tree
+Random Forest
+Support Vector Machine (SVM)
+
+
+Unsupervised Learning
+Definition - Unsupervised Learning is a type of machine learning where the model is trained on unlabeled data, meaning no predefined output labels are available.
+The goal is to discover hidden patterns, structures, or groupings in the data.
+
+Key Characteristics
+
+No labeled output
+Focuses on pattern discovery
+Used for clustering and dimensionality reduction
+
+Real-world Examples
+
+Customer segmentation
+Grouping similar products
+Market basket analysis
+Image compression
+
+Algorithms Used
+
+K-Means Clustering
+Principal Component Analysis (PCA)
+
+
+Semi-Supervised Learning
+Definition - Semi-Supervised Learning is a hybrid approach where the model is trained using a small amount of labeled data and a large amount of unlabeled data.
+It is useful when labeling data is expensive, time-consuming, or difficult.
+
+Key Characteristics
+
+Combines labeled and unlabeled data
+Improves accuracy compared to unsupervised learning
+Common in real-world large datasets
+
+Real-world Examples
+
+Image classification with limited labeled images
+Speech recognition systems
+Medical image analysis
+
+Algorithms / Techniques Used
+
+Self-training models
+Label propagation
+Semi-supervised SVM
+
+
+Reinforcement Learning
+Definition - Reinforcement Learning (RL) is a type of machine learning where an agent learns by interacting with an environment and improves its behavior based on rewards and penalties.
+The goal is to learn an optimal policy that maximizes cumulative reward over time.
+
+Key Characteristics
+
+No labeled dataset
+Learning through trial and error
+Uses reward signals
+Sequential decision-making
+
+Real-world Examples
+
+Game playing (Chess, Go)
+Robotics
+Self-driving cars
+Recommendation systems (dynamic)
+
+Algorithms Used
+Q-Learning
