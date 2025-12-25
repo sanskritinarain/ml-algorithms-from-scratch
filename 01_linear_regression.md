@@ -210,3 +210,29 @@ Linear regression is simple but very powerful.
 It helps us understand relationships between variables and make predictions.
 
 Before moving to complex algorithms, it is important to clearly understand linear regression.
+
+
+## Simple code using scikit-learn
+
+import numpy as np
+from sklearn.linear_model import LinearRegression
+
+# Sample data
+X = np.array([1, 2, 3, 4, 5]).reshape(-1, 1)
+Y = np.array([2, 4, 5, 4, 5])
+
+# Create model
+model = LinearRegression()
+
+# Train model
+model.fit(X, Y)
+
+# Coefficients
+print("Slope:", model.coef_[0])
+print("Intercept:", model.intercept_)
+
+# Prediction
+x_new = np.array([[6]])
+y_pred = model.predict(x_new)
+print("Predicted value:", y_pred[0])
+
