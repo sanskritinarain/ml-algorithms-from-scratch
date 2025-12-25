@@ -1,11 +1,4 @@
 # From Binary Cross-Entropy to Learning Rate  
-(Simple Notes for Logistic Regression)
-
-This file explains the core concepts involved in training a logistic regression model,
-starting from the loss function and ending with learning rate.
-The focus is on intuition, not heavy mathematics.
-
----
 
 ## 1. Loss Function (Big Picture)
 
