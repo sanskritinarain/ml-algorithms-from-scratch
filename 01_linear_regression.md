@@ -217,22 +217,25 @@ Before moving to complex algorithms, it is important to clearly understand linea
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-##Sample data
+# Input (independent variable)
 X = np.array([1, 2, 3, 4, 5]).reshape(-1, 1)
+
+# Output (dependent variable)
 Y = np.array([2, 4, 5, 4, 5])
 
-##Create model
+# Create Linear Regression model
 model = LinearRegression()
 
-##Train model
+# Train the model
 model.fit(X, Y)
 
-##Coefficients
+# Display slope and intercept
 print("Slope:", model.coef_[0])
 print("Intercept:", model.intercept_)
 
-##Prediction
+# Predict for a new value
 x_new = np.array([[6]])
 y_pred = model.predict(x_new)
-print("Predicted value:", y_pred[0])
+
+print( y_pred[0])
 
