@@ -1,6 +1,6 @@
 # From Binary Cross-Entropy to Learning Rate  
 
-## 1. Loss Function (Big Picture)
+## 1. Loss Function 
 
 A **loss function** measures how wrong a model’s prediction is.
 
