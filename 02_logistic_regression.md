@@ -2,9 +2,8 @@
 
 This file is a structured summary of **classification vs regression** and **logistic regression**, based on a YouTube lecture and my own understanding from ML fundamentals.
 
----
 
-## 1. Supervised Learning – Quick Overview
+## 1. Supervised Learning 
 
 In **supervised learning**, the model is trained on **labeled data**.
 
@@ -16,7 +15,6 @@ Supervised learning is mainly divided into:
 - **Classification**
 - **Regression**
 
----
 
 ## 2. Classification vs Regression
 
@@ -36,7 +34,7 @@ Supervised learning is mainly divided into:
 - **Multi-class Classification**  
   More than two classes (e.g., digits 0–9, animal categories)
 
----
+
 
 ### Regression
 - Predicts **continuous numerical values**
@@ -48,7 +46,7 @@ Supervised learning is mainly divided into:
 - Salary
 - Rainfall amount
 
----
+
 
 ## 3. Why Logistic Regression Is Used for Classification
 
@@ -65,7 +63,6 @@ Why?
 
 So logistic regression is perfect for **binary classification problems**.
 
----
 
 ## 4. Linear Regression vs Logistic Regression
 
@@ -78,7 +75,7 @@ So logistic regression is perfect for **binary classification problems**.
 | Curve Shape | Straight line | S-shaped (sigmoid) |
 | Example | Salary prediction | Survival prediction |
 
----
+
 
 ## 5. The Core Problem with Linear Regression for Classification
 
@@ -93,7 +90,7 @@ So we need:
 
 This is where **sigmoid function** comes in.
 
----
+
 
 ## 6. Sigmoid Function & Why It Creates an S-Curve
 
@@ -115,7 +112,6 @@ The **sigmoid function** is:
 
 This makes it ideal for **binary decision-making**.
 
----
 
 ## 7. Odds and Log-Odds 
 
@@ -143,7 +139,6 @@ p = P(Y=1)
 
 So instead of predicting probability directly, logistic regression predicts **log-odds**.
 
----
 
 ## 8. Logistic Regression Model 
 
@@ -164,7 +159,6 @@ p(x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}}
 2. Output converted to probability using sigmoid
 3. Threshold applied → final class label
 
----
 
 ## 9. Where Learning Actually Happens
 
@@ -176,7 +170,6 @@ The model learns:
 - How strongly each feature affects the **log-odds**
 - Direction (+ / −) of impact on the probability
 
----
 
 ## 10. End-to-End Intuition 
 
@@ -188,7 +181,6 @@ The model learns:
 6. Optimization updates weights
 7. Model improves predictions
 
----
 
 ## 11. Practical Applications
 
@@ -203,7 +195,6 @@ The model learns:
   - Patient survival prediction
   - Disease presence detection
 
----
 
 ## 12. Key Takeaways
 
@@ -213,4 +204,3 @@ The model learns:
 - Log-odds allow linear modeling
 - Simple math + strong interpretability = powerful baseline model
 
----
