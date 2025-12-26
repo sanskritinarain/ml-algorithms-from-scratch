@@ -109,7 +109,7 @@ X = balance_data.values[:, 1:5]
 # Target variable (y)
 y = balance_data.values[:, 0]
 
-Split Data into Train and Test Sets
+#Split Data into Train and Test Sets
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.3, random_state=42
 )
