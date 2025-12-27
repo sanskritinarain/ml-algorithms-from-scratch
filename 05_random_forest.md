@@ -144,6 +144,5 @@ A **decision tree** classifies data by asking questions step-by-step based on fe
 ---
 
 ## Key Takeaway
-
-> Random Forest improves accuracy and stability by combining multiple decision trees and using majority voting to make final predictions.
+Random Forest improves accuracy and stability by combining multiple decision trees and using majority voting to make final predictions.
 
