@@ -102,3 +102,48 @@ A **decision tree** classifies data by asking questions step-by-step based on fe
 - Converted species names into numeric labels using:
   ```python
   pd.factorize()
+
+  ## Model Training
+
+- Imported `RandomForestClassifier` from `sklearn.ensemble`.
+- Important parameters used:
+  - `n_jobs=2` → uses two CPU cores for parallel processing
+  - `random_state=0` → ensures reproducible results
+- The model was trained using training features and corresponding labels.
+
+---
+
+## Prediction and Evaluation
+
+- Predictions were made on the test dataset.
+- Used `predict_proba()` to obtain class probability scores.
+- Numeric predictions were mapped back to original species names.
+- Created a confusion-matrix style table using Pandas.
+- Compared **predicted values** with **actual values** to evaluate performance.
+
+---
+
+## Model Performance (Iris Dataset)
+
+| Metric | Value |
+|------|------|
+| Total test samples | 32 |
+| Correct predictions | 30 |
+| Incorrect predictions | 2 |
+| Accuracy | **93%** |
+
+---
+
+## Practical Notes
+
+- Random Forest can handle cases where **some feature values are missing**.
+- Using multiple trees helps resolve **ambiguous classification cases**.
+- The voting mechanism increases prediction reliability.
+- The trained model can be used to predict **new and unseen data**.
+
+---
+
+## Key Takeaway
+
+> Random Forest improves accuracy and stability by combining multiple decision trees and using majority voting to make final predictions.
+
