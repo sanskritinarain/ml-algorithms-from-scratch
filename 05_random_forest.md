@@ -2,7 +2,7 @@
 
 ## 1. Random Forest 
 
-- **Random Forest** is an ensemble learning algorithm.
+- **Random Forest** is an ensemble learning algorithm. (Ensemble learning = using multiple models together to make one final decision)
 - It builds **multiple decision trees** and combines their outputs.
 - Final prediction is made using **majority voting** (for classification).
 - It reduces **overfitting**, which is a common issue in single decision trees.
