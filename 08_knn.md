@@ -170,7 +170,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix, f1_score, accuracy_score
 
-Loading and Inspecting Data
+### Loading and Inspecting Data
 python
 Copy code
 data = pd.read_csv("diabetes.csv")
