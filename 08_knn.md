@@ -177,10 +177,10 @@ data = pd.read_csv("diabetes.csv")
 data.head()
 len(data)
 
-Handling Missing or Invalid Data
+### Handling Missing or Invalid Data
 Some features cannot be zero (e.g., glucose, blood pressure).
 
-Strategy
+### Strategy
 Replace zeros with NaN
 
 Compute column-wise mean
@@ -189,7 +189,7 @@ Replace missing values with mean
 
 This prevents bias caused by invalid zeros.
 
-Train-Test Split
+###Train-Test Split
 python
 Copy code
 X = data.drop("Outcome", axis=1)
@@ -199,7 +199,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=0
 )
 
-Feature Scaling (Very Important for KNN)
+### Feature Scaling (Very Important for KNN)
 KNN relies on distance, so features must be scaled.
 
 python
@@ -209,7 +209,7 @@ X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 Prevents large-value features from dominating distance calculations.
 
-Choosing K and Training Model
+### Choosing K and Training Model
 python
 Copy code
 k = int(np.sqrt(len(X_train)))
@@ -219,12 +219,12 @@ if k % 2 == 0:
 knn = KNeighborsClassifier(n_neighbors=k, metric="euclidean")
 knn.fit(X_train, y_train)
 
-Model Evaluation
+### Model Evaluation
 python
 Copy code
 y_pred = knn.predict(X_test)
 
-confusion_matrix(y_test, y_pred)
+### confusion_matrix(y_test, y_pred)
 accuracy_score(y_test, y_pred)
 f1_score(y_test, y_pred)
 Example Results
@@ -235,7 +235,7 @@ F1 Score: Useful when false positives and false negatives matter
 Accuracy is easy to explain
 F1 Score gives deeper insight
 
-Final Summary
+## Final Summary
 What We Learned
 KNN uses similarity-based classification
 
@@ -247,14 +247,14 @@ Feature scaling is mandatory
 
 Works best on small, clean datasets
 
-Advantages
+### Advantages
 Simple and intuitive
 
 No complex math
 
 Effective baseline model
 
-Limitations
+### Limitations
 Slow for large datasets
 
 Sensitive to noise
